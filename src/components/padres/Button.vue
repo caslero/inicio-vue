@@ -4,7 +4,7 @@ import { computed } from "vue";
 const props = defineProps<{
   class?: string | string[] | Record<string, boolean>;
   type?: "button" | "submit" | "reset";
-  arialLabel?: string;
+  ariaLabel?: string; // ojo: era "arialLabel", debería ser "ariaLabel"
 }>();
 
 const emit = defineEmits<{
@@ -22,8 +22,8 @@ const buttonType = props.type ?? "button";
   <button
     :type="buttonType"
     :class="mergedClass"
-    :arial-label="arialLabel"
-    @click="$emit('click', $event)"
+    :aria-label="props.ariaLabel"
+    @click="emit('click', $event)"
   >
     <slot />
   </button>
