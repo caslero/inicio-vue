@@ -134,7 +134,7 @@ import NavPaginas from "@/components/NavPaginas.vue";
 </script>
 
 <template>
-  <Header>
+  <Header class="px-5 sm:px-0">
     <NavPaginas
       :items="[
         { label: 'Collections', to: '/collections' },

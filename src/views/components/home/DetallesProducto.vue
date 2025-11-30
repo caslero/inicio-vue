@@ -9,7 +9,7 @@ import Heading from "@/components/Heading.vue";
 </script>
 
 <template>
-  <Section class="py-10 ms-4">
+  <Section class="py-10 sm:ms-4 px-5 sm:px-0">
     <Heading indice="h6" class="text-xs mb-3 opacity-60">SNEAKER COMPANY</Heading>
     <Heading indice="h1" class="text-3xl font-semibold mb-5"
       >Fall Limited Edition Sneakers</Heading

@@ -21,7 +21,9 @@ function checkOut() {
 <template>
   <Div class="relative inline-block text-left">
     <Div @click="toggleMenu" class="cursor-pointer">
-      <CarritoSvg />
+      <CarritoSvg
+        class="opacity-60 hover:opacity-100 transition-opacity duration-300"
+      />
     </Div>
 
     <transition name="fade">
@@ -35,7 +37,7 @@ function checkOut() {
               @click="checkOut"
               class="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Cerrar sesión
+              Probando compra
             </Button>
           </Li>
         </Ul>

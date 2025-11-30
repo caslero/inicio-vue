@@ -35,7 +35,7 @@ function logout() {
     <transition name="fade">
       <Div
         v-if="menuVisible"
-        class="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg z-50"
+        class="absolute right-0 mt-2 w-40 bg-[red] border border-gray-200 rounded-md shadow-lg z-50"
       >
         <Ul class="py-1">
           <Li>
